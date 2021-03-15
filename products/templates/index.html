@@ -1,5 +1,8 @@
 <h1>Products</h1>
 <ul>
-    <li>P1</li>
-    <li>P2</li>
+    {% for a in jagal %}
+    <li>{{a.name}}</li>
+    <li>{{a.price}}</li>
+    <img src="{{a.image}}" alt="">
+    {% endfor %}
 </ul>
