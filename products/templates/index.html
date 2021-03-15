@@ -3,6 +3,12 @@
     {% for a in jagal %}
     <li>{{a.name}}</li>
     <li>{{a.price}}</li>
-    <img src="{{a.image}}" alt="">
+    <img src="{{a.image}}" alt="failed to connect to internet">
+    {% endfor %}
+</ul>
+<ul>
+    {% for b in arjun %}
+    Discounts
+    <li>{{b.code}}</li>
     {% endfor %}
 </ul>
