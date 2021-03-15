@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Product
 # Create your views here.
 def index(request):
-    return HttpResponse("<h1>Welcome to central jail </h1> ")
+    products=Product.objects.all()
+    return render(request,'index.html')
 def about(request):
     return HttpResponse("<h2>This is Jagal Ser</h2>")
